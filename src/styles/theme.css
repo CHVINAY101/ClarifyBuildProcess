@@ -1,0 +1,49 @@
+:root {
+  --background: #0b0b0c;
+  --foreground: #e7e4df;
+  --border: #32302e;
+  --primary: #d8d0c5;
+  --primary-foreground: #0b0b0c;
+  --secondary: #151414;
+  --secondary-foreground: #e7e4df;
+  --muted: #171615;
+  --muted-foreground: #a09b95;
+  --accent: #b8a797;
+  --accent-foreground: #0b0b0c;
+  --card: #0b0b0c;
+  --card-foreground: #e7e4df;
+  --popover: #151414;
+  --popover-foreground: #e7e4df;
+  --destructive: #d69b88;
+  --ring: #b8a797;
+  --input: #32302e;
+  --radius: 0rem;
+}
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-destructive: var(--destructive);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Inter', sans-serif;
+}
+@layer base {
+  body { background: var(--background); color: var(--foreground); font-family: 'Inter', sans-serif; }
+  button, a, input, select { outline-offset: 6px; }
+  button { cursor: pointer; }
+  ::selection { background: #58473b; color: #f2ede7; }
+}
